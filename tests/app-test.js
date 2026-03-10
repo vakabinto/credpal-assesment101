@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('../app/app'); // Adjust path if needed
+const app = require('../src/app'); // Adjust path if needed
 
 describe('API Endpoints', () => {
   it('GET /health should return 200', async () => {

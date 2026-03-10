@@ -39,7 +39,7 @@ jobs:
       run: npm install
 
     - name: Run tests
-      working-directory: ./src/tests
+      working-directory: ./tests
       run: npm test
 
     - name: Set up Docker Buildx

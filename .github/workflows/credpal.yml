@@ -39,8 +39,8 @@ jobs:
       run: npm install
 
     - name: Run tests
-      working-directory: ./tests
-      run: npm test
+      working-directory: ./src
+      run: npm test -- ../tests/app-test.js
 
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v3

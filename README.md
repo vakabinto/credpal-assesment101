@@ -33,7 +33,7 @@ This repo sets up a production-ready DevOps pipeline for a basic Node.js app wit
 5. Update EC2 user_data use new image.
 
 ## Key Decisions
-- **Security**: Multi-stage Docker for slim image, non-root user, secrets via env/secrets manager, HTTPS via ALB/ACM. No secrets in repo.
-- **CI/CD**: GitHub Actions for automation on push/PR. Tests ensure quality. Image push only on main.
+- **Security**: Multi-stage Docker for slim image, non-root user, secrets via .env when running on docker compose /secrets manager if deployed on ecs, HTTPS via ALB/ACM. No secrets in repo.
+- **CI/CD**: GitHub Actions for automation on push/PR. Tests ensure quality. Image deploy only on main.
 - **Infrastructure**: AWS VPC for isolation, ALB for load balancing/SSL. EC2 for simplicity; ECS recommended for scaling/rolling deploys.
 - **Deployment**: Rolling via ECS (or blue-green manual). Zero-downtime prioritized.

@@ -12,7 +12,7 @@ services:
       - cred-pgdata:/var/lib/postgresql/data
 
   credpal-service:
-    image: ghcr.io/vakabinto/CredPal-Assesment101/credpal-service:${TAG}
+    image: ghcr.io/vakabinto/credpal-assesment101/credpal-service:${TAG}
     container_name: credpal-service
     env_file:
       - .env

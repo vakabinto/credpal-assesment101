@@ -1,5 +1,7 @@
 # CredPal-Assesment101
 A simple nodejs app  with automated integration and deployment, following DevOps best practise
+## For integerating security into the pipeline, i could have added more steps for auditing the packages, which will fail the pipeline if a certain level of attain, and also configure quality gate, to scan for the quality of our codes, setting a beanchmark. then for more security for our base image in our containerizzed nodejs service, i would integerate Trivy scan/Snyk scan to scan our built images for any security threat and constantly update the base images.
+
 
 ## Overview
 This repo sets up a production-ready DevOps pipeline for a basic Node.js app with endpoints: GET /health, GET /status, POST /process. It includes containerization, CI/CD, IaC, and security best practices.

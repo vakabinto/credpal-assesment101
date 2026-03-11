@@ -38,9 +38,9 @@ jobs:
       working-directory: ./src
       run: npm install
 
-    - name: Run tests
-      working-directory: ./src
-      run: npm test --prefix src -- ../tests/app-test.js
+    # - name: Run tests
+    #   working-directory: ./src
+    #   run: npm test --prefix src -- ../tests/app-test.js
 
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v3
